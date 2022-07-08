@@ -34,7 +34,7 @@ class Board extends React.Component {
     for(var row = 0; row < 3; row ++) {
       var theRow = [];
       for(var col = 0; col < 3; col ++) {
-        theRow.push(<span key={index}>{this.renderSquare(index, isWinningSquare)}</span>);
+        theRow.push(<span key={index}>{this.renderSquare(index)}</span>);
         index++;
       }
       theBoard.push(<div key={row} className="board-row">{theRow}</div>);
